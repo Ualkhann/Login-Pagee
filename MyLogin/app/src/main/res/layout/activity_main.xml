@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="210dp"
+        android:textStyle="bold"
+        android:layout_margin="200dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Username"
+        android:layout_below="@id/signin"
+        android:background="#30ffffff"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="110dp"
+        android:layout_margin="10dp"
+        android:padding="120dp"
+        android:drawableLeft="@drawable/baseline_person__24"
+        android:drawablePadding="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/Username"
+        android:background="#30ffffff"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="110dp"
+        android:layout_margin="10dp"
+        android:padding="120dp"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="30dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbutton"
+        android:layout_below="@id/password"
+        android:text="LOGIN"
+        android:backgroundTint="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:textSize="110dp"
+        android:layout_margin="250dp"
+        android:padding="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpass"
+        android:layout_below="@id/loginbutton"
+        android:text="Forgot password?"
+        android:textColor="@color/white"
+        android:textSize="110dp"
+        android:layout_margin="80dp"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/others"
+        android:layout_below="@id/forgotpass"
+        android:text="Or Sign In With "
+        android:textColor="@color/black"
+        android:textSize="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="500dp"
+        android:padding="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="750dp"
+            android:padding="15dp"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="50dp"
+            android:padding="1dp"
+
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="750dp"
+            android:padding="15dp"
+            android:src="@drawable/twitter"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
